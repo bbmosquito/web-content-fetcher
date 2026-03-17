@@ -64,3 +64,6 @@ python3 scripts/fetch.py https://example.com/article > output.md
 ## 作者
 
 石臻说AI · OpenClaw 实战系列
+
+
+公众号一键排版 一键发布SKILL  ： https://github.com/shirenchuang/kuaifa
