@@ -68,7 +68,7 @@ scrapling install
 
 ```
 帮我读取这篇文章：https://example.com/article
-用 Scrapling 读取这篇公众号：https://mp.weixin.qq.com/s/xxx
+用 Scrapling 读取这篇公众号：https://mp.weixin.qq.com/s/EwVItQH4JUsONqv_Fmi4wQ
 ```
 
 ### 命令行单独使用
@@ -78,7 +78,7 @@ scrapling install
 python3 scripts/fetch.py <url> [max_chars]
 
 # 示例：读取微信公众号文章
-python3 scripts/fetch.py https://mp.weixin.qq.com/s/xxx 30000
+python3 scripts/fetch.py https://mp.weixin.qq.com/s/EwVItQH4JUsONqv_Fmi4wQ 30000
 
 # 输出到文件
 python3 scripts/fetch.py https://example.com/article > output.md
