@@ -115,19 +115,40 @@ URL 输入
 
 ## 支持平台
 
-| 平台 | 模式 | 状态 |
-|------|------|:----:|
-| 微信公众号 | stealth | ✅ |
-| 掘金 | stealth | ✅ |
-| CSDN | fast | ✅ |
-| 少数派 | fast | ✅ |
-| Substack | fast | ✅ |
-| Medium | fast | ✅ |
-| OpenAI / Google Blog | fast | ✅ |
-| 阮一峰博客 | fast | ✅ |
-| GitHub | fast | ✅ |
-| 知乎 | stealth | ✅ |
-| 小红书 | ❌ 需登录态 | ❌ |
+### 国内平台
+
+| 平台 | 模式 | 状态 | 说明 |
+|------|------|:----:|------|
+| 微信公众号 (mp.weixin.qq.com) | fast | ✅ | 正文完整提取 |
+| 掘金 (juejin.cn) | stealth (auto) | ✅ | 自动降级到 stealth |
+| CSDN (blog.csdn.net) | fast | ✅ | 正文精准提取 |
+| 少数派 (sspai.com) | fast | ✅ | article 选择器命中 |
+| 博客园 (cnblogs.com) | fast | ✅ | 文章列表和正文 |
+| 知乎 (zhihu.com) | stealth | ✅ | 需有效 URL |
+| 36氪 (36kr.com) | fast | ⚠️ | 可提取但含导航噪音 |
+| 今日头条 (toutiao.com) | stealth | ⚠️ | JS 渲染，含导航噪音 |
+| InfoQ 中文 (infoq.cn) | stealth (auto) | ⚠️ | 可提取但含导航噪音 |
+| 网易 (163.com) | fast | ⚠️ | 需有效文章 URL |
+| 小红书 | - | ❌ | 需登录态 |
+
+### 海外平台
+
+| 平台 | 模式 | 状态 | 说明 |
+|------|------|:----:|------|
+| OpenAI Blog | fast | ✅ | article 选择器命中 |
+| Google Blog | fast | ✅ | article 选择器命中 |
+| Nature | fast | ✅ | 论文摘要完整 |
+| arXiv | fast | ✅ | 标题/作者/摘要 |
+| GitHub | fast | ✅ | README 完整提取 |
+| Next.js Blog | fast | ✅ | article 选择器命中 |
+| React Docs (react.dev) | fast | ✅ | 文档正文清晰 |
+| MDN Web Docs | fast | ✅ | main 选择器命中 |
+| Python Docs | fast | ✅ | 目录和正文 |
+| Paul Graham Essays | fast | ✅ | 经典静态页 |
+| 阮一峰博客 | fast | ✅ | 周刊完整提取 |
+| Claude Code Docs | fast | ✅ | 文档正文 |
+| Product Hunt | stealth | ⚠️ | Cloudflare 验证拦截 |
+| more... | | | |
 
 ---
 
